@@ -26,7 +26,7 @@ module Reporting
             {
               on_demand: proc{ |variant| variant.on_demand },
               on_hand: proc{ |variant| variant.on_demand ? I18n.t(:on_demand) : variant.on_hand },
-              tax_category: proc { |variant| variant.tax_category_id && variant.tax_category.name }
+              tax_category: proc { |variant| (variant.tax_category_id && variant.tax_category.name) || I18n.t("none") }
             }
           )
         end
