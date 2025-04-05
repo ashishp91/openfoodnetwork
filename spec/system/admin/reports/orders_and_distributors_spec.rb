@@ -51,7 +51,7 @@ RSpec.describe "Orders And Distributors" do
         [completed_at.to_s, order.id, "John Doe", order.email, "123-456-7890", "Herndon",
          variant.sku, Spree::Product.first.name.to_s, "1g", "1",
          I18n.t("admin.reports.none"), "10.0", I18n.t("admin.reports.none"),
-         "Check","By Bike", "10 Lovely Street", "Herndon", "20170", "UPS Ground",
+         "Check", "By Bike", "10 Lovely Street", "Herndon", "20170", "UPS Ground",
          I18n.t("admin.reports.none")].join(" ")
       }
       let(:line_item4) {
